@@ -1,9 +1,9 @@
 package OOP;
 
 public class User {
-    protected int id;
-    protected String login;
-    protected String password;
+    private int id;
+    private String login;
+    private String password;
 
     User(int id, String login, String password) {
         this.id = id;
@@ -12,8 +12,11 @@ public class User {
     }
 
     User(){
+    }
 
-    };
+    public String getInfo(){
+        return "Login="+login+"\nid="+id+"\npassword="+password+"\n";
+    }
 
 
     public static void main(String[] args) {
